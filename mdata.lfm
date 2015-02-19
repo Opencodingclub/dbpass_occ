@@ -1,0 +1,80 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 180
+  HorizontalOffset = 440
+  VerticalOffset = 263
+  Width = 349
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = '_id'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = '_user'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = '_apps'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = '_pass'
+        DataType = ftFixedChar
+        Precision = -1
+        Size = 128
+      end    
+      item
+        Name = '_logo'
+        DataType = ftMemo
+        Precision = -1
+        Size = 0
+      end>
+    Active = True
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from  tpass'
+    )
+    DeleteSQL.Strings = (
+      ''
+    )
+    Params = <>
+    left = 288
+    top = 32
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLite3Connection1
+    left = 184
+    top = 32
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/aye7/workspace/dbpass/dbpass'
+    KeepConnection = True
+    LogEvents = []
+    ConnectorType = 'SQLite3'
+    left = 304
+    top = 136
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = '/home/aye7/workspace/dbpass/dbpass'
+    KeepConnection = True
+    Transaction = SQLTransaction1
+    LogEvents = []
+    Options = []
+    left = 48
+    top = 32
+  end
+end

@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 376
+  Height = 208
+  Top = 192
+  Width = 302
+  Caption = 'Login !'
+  ClientHeight = 208
+  ClientWidth = 302
+  LCLVersion = '1.2.6.0'
+  object Button1: TButton
+    Left = 38
+    Height = 41
+    Top = 139
+    Width = 107
+    Caption = '&Login'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 166
+    Height = 41
+    Top = 139
+    Width = 107
+    Caption = '&Cancel'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 120
+    Height = 31
+    Top = 35
+    Width = 153
+    Color = clNone
+    Font.Color = clGray
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 120
+    Height = 31
+    Top = 83
+    Width = 153
+    Color = clNone
+    EchoMode = emPassword
+    Font.Color = clGray
+    Font.Style = [fsItalic]
+    ParentFont = False
+    PasswordChar = #2
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 19
+    Top = 40
+    Width = 40
+    Caption = 'User '
+    Font.Height = -16
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 19
+    Top = 88
+    Width = 74
+    Caption = 'Password'
+    Font.Height = -16
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+end
